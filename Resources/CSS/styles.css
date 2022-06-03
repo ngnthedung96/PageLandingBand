@@ -1,0 +1,504 @@
+/* ............default setup............ */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size: 20px;
+    /* mặc định là 16px */
+    color: black;
+    background-color: #fff;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+body{
+    overflow-x:hidden;
+}
+/* ......reusablbe component............ */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;}
+.row{
+    max-width:  768px;
+    margin: auto;
+}
+h2{
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+h3{
+    font-weight: 300;
+}
+h4{
+    font-weight: 300;
+    font-size: 75%;
+    margin-top: 20px;
+    font-weight: 200px;
+    font-style: italic;
+    margin-bottom: 20px;
+    opacity: 0.4;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 16px 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active{
+    background-color: #ccc;
+    color: black;
+}
+/* ---------header----------- */
+:root{
+    --high--: 50px;
+}
+.nav{
+    height: var(--high--);
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.nav ul{
+    list-style: none;
+}
+
+.main-nav{
+    float: left;
+    height: 100%;
+}
+.main-nav li{
+    height: 100%;
+    display: inline-block;
+    font-size: 80%;
+    text-align: center;
+}
+.main-nav li a{
+    padding: 0 24px;
+    text-decoration: none;
+    color: white;
+    font-weight:400;
+    font-size: 100%;
+    line-height: var(--high--);
+    display: block;
+    box-sizing: border-box;
+    font-style:initial;
+}
+.main-nav .sub-nav{
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+.main-nav .sub-nav li{
+    display: block;
+    text-align: left;
+    background-color: white;
+    
+}
+.main-nav .sub-nav li a{
+    color: #000;
+    font-weight: 200;
+    font-size: 150%;
+    padding-left: 10px;
+    line-height: 38px;
+    
+}
+.main-nav:last-child{
+    position: relative;;
+}
+
+.extra-nav{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    height: var(--high--);
+    padding: 0px 15px;
+}
+.extra-nav.one li{
+    line-height: var(--high--);
+}
+.extra-nav.second li{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+.extra-nav li{
+    line-height: 100%;
+}
+.extra-nav li a{
+    color: white;
+}
+.main-nav li:hover .sub-nav{
+    display: block;
+
+}
+.main-nav  .sub-nav li:hover a,
+.main-nav > li:hover >a{
+    background-color: #ccc;
+    color: #000;
+}
+.extra-nav.one:hover{
+    background-color: red;
+}
+.extra-nav.second:hover {
+    background-color: #ccc;
+}
+.extra-nav.second:hover i{
+    color: black;
+} 
+.extra-nav.second{
+    display: none;
+}
+header .slider{
+    margin-top: 46.5px;
+    background-image: url('https://www.w3schools.com/w3images/chicago.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.text-content{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 120%;
+    font-weight: 400;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,100%);
+    text-align: center;
+    color: white;
+}
+.text-content p{
+    margin-top: 20px;
+    font-size: 75%;
+    opacity: 0.9;
+    font-weight: 1000;
+}
+/*------------------------ band-section--------------- */
+.band-section{
+    color: #000;   
+    padding: 64px 0px 64px 0px; 
+}
+.band-header{
+    position: relative;
+}
+.band-section .band-header{
+    text-align: center;
+}
+.band-section .band-header p{
+    font-size: 75%;
+    text-align: justify;
+}
+.band-col{
+    font-size: 75%;
+    padding: 32px 0px 32px 0px;
+    color: #000;
+    text-align: center;
+}
+.band-col .band-box img{
+    text-align: center;
+    width: 60%;
+    padding: 15px 0px 0px 15px;
+}
+/*-------------- tour-section----------- */
+.tour-section{
+    padding: 64px 0px 94px 0px;
+    color: white;
+    background-color: black;
+}
+.tour-head h2,
+.tour-head h4{
+    text-align: center;
+    margin: 30px;
+}
+.tour-list{
+    background-color: white;
+    color: black;
+}
+.tour-list ul li{
+    position: relative;
+    font-size: 75%;
+    list-style: none;
+    padding: 8px 16px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.tour-list ul li p{
+    color: white;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+}
+.tour-list ul li .number{
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    transform: translate(0,-50%);
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.tour-box{
+    font-size: 75%;
+    color: black;
+    background-color: white;
+}
+.tour-box img{
+    width: 100%;
+    cursor: pointer;
+}
+.tour-box img:hover,
+.tour-box img:active{
+    filter: brightness(50%);
+}
+.tour-content{
+    padding: 10px 16px;
+    margin: 10px 0px 10px 0px;
+}
+.tour-content h4{
+    color: black;
+    opacity: 1;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 79%;
+}
+.tour-content h5{
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 75%;
+}
+.tour-content h4,
+.tour-content h5,
+.tour-content p,
+.tour-content .btn
+{
+    margin: 0px 0px 25px 0px;
+}
+
+/* ---------contact-section--------- */
+.contact-section{
+    padding: 64px 0px 128px 0px;
+}
+.contact-header{
+    text-align: center;
+}
+.contact-content .col1{
+    font-size: 75%;
+}
+.contact-content .col1 ul{
+    list-style: none;
+}
+.contact-content .col1 ul li{
+    margin-top: 7px;
+}
+.contact-content .col1 ul li p{
+    display: inline-block;
+    margin-left: 12px;
+}
+.col1 ul li i{
+    width: 20px;
+}
+.contact-content .col2{
+    font-size: 75%;
+    position: relative;
+}
+.contact-content .col2 .name{
+    float: left;
+}
+.contact-content .col2 .email{
+    float: right;
+}
+.contact-content .col2 .message,
+.contact-content .col2 .email,
+.contact-content .col2 .name{
+    font-size: 75%;
+    padding: 12px 8px 12px 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(207, 205, 205);
+}
+.contact-content .col2 .message{
+    width: 100%;
+}
+.contact-content .col2 .email,
+.contact-content .col2 .name{
+    width: 48%;
+}
+.contact-content .col2 .btn{
+    position: absolute;
+    top: 110%;
+    left: 100%;
+    transform: translate(-100%,-20%);
+}
+/* js-modal-section */
+.js-modal-section.open{
+    display:inline-block;
+}
+.js-modal-section{
+    display:none;
+    padding-top:100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+.js-modal-section .row{
+    max-width:1000px;
+}
+.js-modal-section .row.js-modal-container{
+    animation: showmodal ease 0.5s;
+}
+.tickets-header{
+    background-color: #009688;
+    padding: 40px 16px 40px 16px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.tickets-header h2{
+    display: inline;
+}
+.tickets-header i{
+    font-size: 28px;
+    margin-right: 10px;
+}
+.tickets-header .js-remove-modal{
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 8px 16px 8px 16px;
+    font-size: 79%;
+    margin: 0;
+}
+.tickets-header .js-remove-modal:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.tickets-content{
+    padding: 8px 16px 0px 16px;
+    position: relative;
+    background-color: white;
+}
+.tickets-content .input p{
+    display: inline;
+    font-size: 75%;
+}
+.tickets-content .input i{
+    font-size: 75%;
+}
+.tickets-content .input p,
+.tickets-content .input input{
+    margin: 8px 0px 20px 0px;
+}
+.tickets-content .input input{
+    display: block;
+    padding: 8px;
+    width: 100%;
+    font-size: 75%;
+    border:1px solid #ccc;
+}
+.button-tickets .btn{
+    font-size: 79%;
+    position: absolute;
+    top: 180px;
+    right:16px;
+    left:16px;
+    text-align: center;
+    background-color: #009688;
+    padding: 10px 16px 10px 10px;
+    margin: 16px 0px 16px 0px;
+}
+.button-tickets .btn:hover{
+    background-color: #ccc;
+}
+.button-tickets .footer-tickets{
+    margin-top: 90px;
+    position: relative;
+    font-size: 75%;
+}
+.button-tickets .footer-tickets .help-tickets{
+    float: right;
+}
+.button-tickets .footer-tickets .btn{
+    text-align: left;
+    background-color: red;
+    top:0px;
+    left:0px;
+    padding: 10px;
+    padding-left: 16px;
+    padding-right: 40px ;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font-size: 75%;
+}
+.button-tickets .footer-tickets .btn:hover{
+    background-color: #ccc;
+}
+.button-tickets .footer-tickets .btn i{
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(0,-50%);
+    width: 10px;
+}
+.button-tickets .footer-tickets .help-tickets{
+    margin: 8px 0px 32px 0px;
+}
+.footer-tickets .help-tickets a{
+    color: blue;
+}
+/* -------location-section----------- */
+.location-section img{
+    width: 100%;
+}
+/* --------footer----------- */
+footer{
+    padding: 64px 0px 64px 0px;
+    background-color: rgba(241, 241, 241);
+}
+footer{
+    text-align: center;
+}
+.icons{
+    margin-bottom: 15px;
+}
+.icons i{
+    font-size: 25px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.icons i:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+.copyright{
+    opacity: 0.5;
+    font-size: 75%;
+}
+.copyright p a{
+    color: black;
+}
+@keyframes showmodal{
+    from{
+        opacity: 0;
+        transform: translate(0,-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

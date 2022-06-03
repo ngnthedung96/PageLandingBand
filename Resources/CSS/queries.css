@@ -1,0 +1,226 @@
+/* Big tablet to 1200px; */
+@media only screen and(min-width:700px) and (max-width:1200px){
+    .btn{
+        font-size: 100%;
+    }
+    h4{
+        opacity: 0.7;
+    }
+    .nav{
+        height: 50px;
+    }
+    header .slider{
+        height: 85vh;
+    }
+    header .main-nav li a{
+        font-size: 120%;
+    }
+    header .text-content{
+        bottom: 30%;
+    }
+    .band-section{ 
+        height: 100vh;
+    }
+    .row{
+        max-width: 900px;
+    }
+    .band-col .band-box img{
+        width: 70%;
+    }
+    .tour-content h5{
+        opacity: 0.8;
+        font-size: 100%;
+    }
+    .tour-content .btn{
+        padding: 16px;
+    }
+    .js-modal-section{
+        font-size: 120%;
+    }
+    .js-modal-section .row{
+        max-width:800px;
+    }
+    .band-col .band-box img{
+        width: 70%;
+    }
+
+}
+/* Small tablet to big tablet from 768x to 1023px */
+@media only screen and (max-width: 1023px){
+    header .slider{
+        height: 75vh;
+    }
+    .sub-nav li a{
+        padding: 2px 30px 2px 12px
+    }
+    header .text-content{
+        bottom: 35%;
+    }
+    .row{
+        max-width: 700px;
+    }
+    .js-modal-section .row{
+        max-width:650px;
+    }
+    .tour-content h4{
+        font-size: 120%;
+    }
+    .tour-col{
+        font-size: 110%;
+    }
+    .btn{
+        padding: 15px 19px;
+        font-size: 120%;
+    }
+    .contact-content .col2 .message,
+    .contact-content .col2 .email,
+    .contact-content .col2 .name{
+        padding: 12px 8px 12px 8px;
+        font-size: 90%;
+    }
+    .contact-content .col1 ul li{
+        margin: 10px 0px ;
+    }
+    .icons i{
+        margin: 5px;
+        font-size: 150%;
+    }
+    .copyright a{
+        padding: 8px 0px;
+    }
+
+}
+/* Small phones to small tablets max 767px */
+@media only screen and (max-width: 767px){
+    header .slider{
+        height: 65vh;
+    }
+    header .text-content{
+        bottom: 45%;
+        font-size: 100%;
+    }
+    .row{
+        max-width: 580px;
+    }
+    .js-modal-section .row{
+        max-width:500px;
+    }
+}
+/* Small phones from 0 to 480px; */
+@media only screen and (max-width: 600px){
+    .row{
+        max-width: 480px;
+    }
+    .btn{
+        width: 100%;
+        padding: 12px 0px;
+    }
+    h2{
+        font-size: 200%;
+    }
+    h4{
+        font-size: 120%;
+        opacity: 0.7;
+    }
+    .nav{
+        overflow: hidden;
+    }
+    .extra-nav.one {
+        display: none;
+    }
+    .extra-nav.second {
+        display: inline-block;
+        padding: 20px;
+        height: 50px;
+    }
+    .main-nav {
+        width: 100%;
+    }
+    .main-nav .home{
+        display: inline-block;
+    }
+    .main-nav li{
+        display: block;
+        text-align: left;
+    }
+    .main-nav .sub-nav{
+        position: initial;
+    }
+    .main-nav .sub-nav li{
+        background-color: rgb(27, 26, 26);
+    }
+    .main-nav .sub-nav li a{
+        color: white;
+        padding: 12px 44px;
+    }
+    .text-content{
+        display: none;
+    }
+    .band-section{ 
+        height: 240vh;
+    }
+    .band-col .band-box{
+        width: 100%;
+        margin: 30px 0px 20px 0px;
+    }
+    .band-col .band-box img{
+        width: 60%;
+    }
+    .tour-list{
+        margin-bottom: 30px;
+    }
+    .tour-list ul li{
+        padding: 8px 16px;
+    }
+    .tour-list ul li .row1{
+        left: 35%;
+    }
+    .tour-list ul li .row2{
+        left: 25%;
+    }
+    .tour-box{
+        width: 100%;
+        margin: 50px 0;
+    }
+    .tour-list ul li .number{
+        left: 83%;
+        padding: 2px 15px;
+        border-radius: 500px;
+    }
+    .tour-content{
+        font-size: 100%;
+        padding: 10px 16px;
+        margin: 10px 0px 10px 0px;
+    }
+    .contact-section{
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+    .contact-content .col1{
+        width:100%;
+        font-size: 90%;
+        margin: 30px 0px;
+    }
+    .contact-content .col1 ul li{
+        padding: 10px 0px;
+        margin: 0px;
+    }
+    .contact-content .col1 ul li p{
+        margin-left: 20px;
+    }
+    .contact-content .col2 .name,
+    .contact-content .col2 .email{
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+    .contact-content .col2 .message,
+    .contact-content .col2 .email,
+    .contact-content .col2 .name{
+        padding: 12px 8px 12px 8px;
+    }
+    .contact-content .col2{
+        width: 100%;
+        font-size: 100%;
+    }
+}
